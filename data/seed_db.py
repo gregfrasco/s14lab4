@@ -3,7 +3,7 @@
 import psycopg2
 import pandas as pd
 
-conn = psycopg2.connect("postgres://kgzfilqmcspesj:2b193db66931c6d2f1006451495e57c0dbbd72b8b1c42a59cbf3e7378a04b428@ec2-52-204-232-46.compute-1.amazonaws.com:5432/dfslgqu84qs73e")
+conn = psycopg2.connect("host=localhost dbname=homework_users_db user=jj")
 cur = conn.cursor()
 
 cur.execute("DROP TABLE IF EXISTS homework_users;")
