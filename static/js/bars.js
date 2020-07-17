@@ -138,14 +138,6 @@ class Bars {
                             .attr('height', vis.gH - h)
                             .attr('x', Math.floor(w * 0.1))
                             .attr('fill', 'rgba(0, 0, 128, 1)')
-                            .on('mouseover', (d, i, t) => {
-                                d3.select(t[0])
-                                    .attr('fill', '#5D1362')
-                            })
-                            .on('mouseout', (d, i, t) => {
-                                d3.select(t[0])
-                                    .attr('fill', 'rgba(0, 0, 128, 1)')
-                            })
                             .transition().duration(0)
                             .style("fill", "white")
                             .transition().duration(500).delay(100 * i)
